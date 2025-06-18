@@ -1,0 +1,558 @@
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+  color: #073C64;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  color: #002B5B;
+}
+
+/* HEADER */
+header {
+  background-color: #0077b6;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.navbar ul li a:hover {
+  opacity: 0.8;
+}
+
+/* BANNER ORGULHO */
+.banner-orgulho {
+  background-image: url('/assets/banner-orgulho.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white;
+  text-align: left;
+}
+
+.banner-conteudo {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 550px;
+}
+
+.orgulho-title {
+  font-size: 1.8rem;
+  color: #002B5B;
+}
+
+.orgulho-texto {
+  margin-top: 10px;
+  color: #003366;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  gap: 40px;
+}
+
+.hero-texto {
+  flex: 1;
+}
+
+.selo-acolhimento {
+  font-size: 0.9rem;
+  background-color: #90e0ef;
+  color: #004e89;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.titulo-principal {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #002B5B;
+}
+
+.hero-texto p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.hero-imagem img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.btn.destaque {
+  background-color: #00b4d8;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.btn.destaque:hover {
+  background-color: #0077b6;
+}
+
+/* SOBRE */
+.sobre {
+  padding: 60px 0;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* SERVIÇOS */
+.titulo-servicos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card-servico {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
+.card-servico h3 {
+  color: #023e8a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* CONTATO BLOCO COMPLETO */
+.bloco-contato-completo {
+  background-color: #e6f6ff;
+  padding: 80px 20px;
+}
+
+.bloco-contato {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contato-ilustracao {
+  position: relative;
+  max-width: 280px;
+  flex: 1;
+}
+
+.contato-ilustracao img {
+  max-width: 100%;
+  height: auto;
+}
+
+.botao-whatsapp {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  width: 60px;
+  height: 220px;
+  z-index: 10;
+}
+
+.botao-whatsapp img {
+  width: 100%;
+  height: auto;
+}
+
+.contato-formulario {
+  flex: 1;
+  min-width: 300px;
+  max-width: 480px;
+}
+
+.contato-formulario .titulo-contato {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.contato-formulario .texto-contato {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #155d8a;
+}
+
+.formulario-moderno {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario-moderno .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario-moderno label {
+  font-weight: 600;
+  color: #003366;
+  font-size: 0.95rem;
+}
+
+.formulario-moderno input,
+.formulario-moderno textarea {
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.formulario-moderno input:focus,
+.formulario-moderno textarea:focus {
+  border-color: #00b4d8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 180, 216, 0.1);
+}
+
+.formulario-moderno button {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00b4d8;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-moderno button:hover {
+  background-color: #007aa7;
+}
+
+/* ALERTA */
+.alert.success {
+  background-color: #d1f7d6;
+  padding: 12px;
+  text-align: center;
+  color: #155724;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* INTRO HERO */
+.intro-hero {
+  background-image: url('/assets/foto-fundo-startneuro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  color: #fff;
+}
+
+.intro-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(3, 12, 49);
+  z-index: 0;
+}
+
+.intro-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.intro-titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.intro-subtitulo {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+
+/* NAVBAR */
+.topo {
+  background-color: #0077b6;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #90e0ef;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f0f8ff;
+  color: #003366;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-texto {
+    order: 2;
+  }
+  .hero-imagem {
+    order: 1;
+  }
+  .bloco-contato {
+    flex-direction: column;
+    text-align: center;
+  }
+  .botao-whatsapp {
+    right: 0;
+    bottom: -20px;
+  }
+}
+.card-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #e0e7ff; /* azul pastel TEA */
+  color: #002B5B;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 180px;
+  border-left: 6px solid #4361ee; /* roxo vibrante TEA */
+}
+
+.card-servico:nth-child(2) {
+  background-color: #ffe2e2; /* rosa pastel */
+  border-left-color: #f15bb5;
+}
+
+.card-servico:nth-child(3) {
+  background-color: #e2f0cb; /* verde pastel */
+  border-left-color: #06d6a0;
+}
+
+.card-servico:nth-child(4) {
+  background-color: #d0f4ff; /* azul bebê */
+  border-left-color: #00b4d8;
+}
+
+.card-servico:nth-child(5) {
+  background-color: #fff1d0; /* amarelo claro */
+  border-left-color: #fca311;
+}
+
+.card-servico:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.card-servico h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-servico p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.mapa-localizacao {
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 20px 40px;
+}
+
+.mapa-localizacao h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+.intro-hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.intro-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(3, 12, 49, 0.6); /* opacidade escura azulada */
+  z-index: 1;
+}
+
+.intro-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.intro-titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.intro-subtitulo {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f0f0f0;
+}

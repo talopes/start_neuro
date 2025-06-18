@@ -1,0 +1,130 @@
+<%- include("partials/header") %>
+
+<!-- Banner Orgulho Autista -->
+<section class="intro-hero">
+  <video autoplay muted loop playsinline class="intro-video-bg">
+    <source src="/assets/video-fundo.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+  <div class="intro-overlay"></div>
+
+  <div class="intro-hero-content">
+    <h1 class="intro-titulo">Clínica Start Neuro</h1>
+    <p class="intro-subtitulo">
+      Especialistas em neurodesenvolvimento infantil com empatia, ciência e acolhimento.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- Hero Section -->
+<section class="hero container">
+  <div class="hero-texto">
+    <span class="selo-acolhimento">Especialistas em neuroinfância</span>
+    <h2 class="titulo-principal">Acolhimento real para crianças reais</h2>
+    <p>Somos referência em diagnóstico, terapias e desenvolvimento infantil com base em evidências e afeto.</p>
+    <a href="#contato" class="btn destaque">Agende uma conversa</a>
+  </div>
+  <div class="hero-imagem">
+    <img src="/assets/crianca_tea.png" alt="Criança correndo">
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="destaque-sobre">
+  <div class="container destaque-conteudo">
+    <h2 class="destaque-titulo">Por que existimos?</h2>
+    <p class="destaque-texto">
+      Crianças com TEA não precisam se encaixar, precisam ser compreendidas.  
+      A Start Neuro nasceu para ser ponte entre o diagnóstico e uma jornada terapêutica humanizada.  
+      Aqui, cada detalhe importa.
+    </p>
+  </div>
+</section>
+
+
+<!-- Serviços com Cards -->
+<section id="servicos" class="container servicos">
+  <h2 class="titulo-servicos">Soluções que respeitam o tempo de cada criança</h2>
+  <div class="cards-servicos">
+    <div class="card-servico">
+      <h3>Avaliação Diagnóstica</h3>
+      <p>Mapeamento completo com escalas reconhecidas (ADOS-2, CARS).</p>
+    </div>
+    <div class="card-servico">
+      <h3>Psicologia Infantil</h3>
+      <p>Promoção da autoestima, autonomia emocional e vínculos afetivos.</p>
+    </div>
+    <div class="card-servico">
+      <h3>Fonoaudiologia</h3>
+      <p>Estimulação da linguagem verbal e não verbal com base nas necessidades reais.</p>
+    </div>
+    <div class="card-servico">
+      <h3>Terapia Ocupacional</h3>
+      <p>Integração sensorial, regulação e coordenação para maior independência.</p>
+    </div>
+    <div class="card-servico">
+      <h3>Neurologia</h3>
+      <p>Acompanhamento clínico especializado em desenvolvimento neuroinfantil.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="bloco-contato-completo">
+  <div class="bloco-contato container">
+    <div class="contato-ilustracao">
+      <img src="/assets/logo_conversar.png" alt="Personagem sentado" />
+      <a
+        href="https://wa.me/5511999999999"
+        class="botao-whatsapp"
+        target="_blank"
+        aria-label="Fale conosco pelo WhatsApp"
+      >
+        <img src="/assets/whatsapp-icon.svg" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <div class="contato-formulario">
+      <h2 class="titulo-contato">Vamos conversar?</h2>
+      <p class="texto-contato">
+        Preencha os dados ao lado e nossa equipe entrará em contato para entender como podemos acolher você e sua família.
+      </p>
+
+      <% if (query.sucesso) { %>
+        <div class="alert success">✅ Agendamento enviado com sucesso!</div>
+      <% } %>
+
+      <form action="/agendar" method="POST" class="formulario-moderno">
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required />
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="campo">
+          <label for="mensagem">Como podemos ajudar?</label>
+          <textarea name="mensagem" id="mensagem" rows="4" placeholder="Descreva sua necessidade ou dúvida" required></textarea>
+        </div>
+        <button type="submit" class="btn destaque">Enviar mensagem</button>
+      </form>
+    </div>
+  </div>
+</section>
+<div class="mapa-localizacao">
+  <h3>Estamos em Itapecerica da Serra – SP</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0037342175043!2d-46.84964562464683!3d-23.568114561702584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5122c17e6a63%3A0x511fe712ee6b7d8e!2sItapecerica%20da%20Serra%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1718723456789"
+    width="100%"
+    height="300"
+    style="border:0; border-radius: 12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+<%- include("partials/footer") %>
