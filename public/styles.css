@@ -150,7 +150,7 @@ header {
 }
 
 .btn.destaque2 {
-  background-color: #fffb05;
+  background-color: #e8fc34;
   color: rgb(43, 42, 42);
   padding: 14px 32px;
   border: none;
@@ -208,7 +208,7 @@ header {
 
 /* CONTATO BLOCO COMPLETO */
 .bloco-contato-completo {
-  background-color: #073f5f;
+  background-color: #ecedee;
   padding: 80px 20px;
 }
 
@@ -255,13 +255,13 @@ header {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #070e64;
 }
 
 .contato-formulario .texto-contato {
   font-size: 1rem;
   margin-bottom: 30px;
-  color: #ffffff;
+  color: #24213b;
 }
 
 .formulario-moderno {
@@ -499,7 +499,7 @@ footer {
 
 .card-servico:nth-child(5) {
   background-color: #fff1d0; /* amarelo claro */
-  border-left-color: #fca311;
+  border-left-color: #e8fc34;
 }
 
 .card-servico:hover {
@@ -520,9 +520,9 @@ footer {
 }
 
 .mapa-localizacao {
-  margin-top: 60px;
+  margin-top: 20px;
   text-align: center;
-  padding: 0 20px 40px;
+  padding: 0 20px 20px;
 }
 
 .mapa-localizacao h3 {
@@ -680,7 +680,7 @@ footer {
 
 .depoimentos-titulo {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #003366;
   margin-bottom: 40px;
 }
@@ -698,6 +698,7 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   max-width: 500px;
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -711,7 +712,7 @@ footer {
 }
 
 .avaliacao {
-  color: #f5b301;
+  color: #e8fc34;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
@@ -719,38 +720,6 @@ footer {
 .card-depoimento .data {
   font-size: 0.9rem;
   color: #666;
-}
-.instagram-preview {
-  padding: 40px 20px;
-  background-color: #f8faff;
-  text-align: center;
-}
-
-.instagram-preview h2 {
-  margin-bottom: 20px;
-  color: #003366;
-  font-size: 1.8rem;
-}
-
-.insta-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px;
-  justify-items: center;
-  margin-bottom: 20px;
-}
-
-.insta-grid img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.insta-grid img:hover {
-  transform: scale(1.03);
 }
 
 .btn.mini {
@@ -769,5 +738,51 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+  .depoimentos-bloco {
+    padding: 20px;
+  }
+
+  .card-depoimento {
+    margin: 0 auto; /* Garante que cada card fique centralizado */
+  }
+}
+.instagram-section {
+  background-color: #f2f4f5;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.instagram-section h2,
+.instagram-section h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.instagram-section p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.botao-instagram {
+  background-color: #e8fc34;
+  color: #003366;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.botao-instagram:hover {
+  background-color: #00bfe2;
+}
+
+.post-instagram iframe {
+  border-radius: 12px;
+  max-width: 100%;
+}
 
 
