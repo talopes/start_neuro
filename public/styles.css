@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 /* HEADER */
 header {
-  background-color: #0077b6;
+  background-color: #0b4768;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -101,8 +101,19 @@ header {
 
 .selo-acolhimento {
   font-size: 0.9rem;
-  background-color: #90e0ef;
+  background-color: #e8fc34;
   color: #004e89;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.selo-acolhimento2 {
+  font-size: 0.9rem;
+  background-color: #0c054e;
+  color: #ffffff;
   padding: 6px 12px;
   border-radius: 12px;
   display: inline-block;
@@ -136,6 +147,19 @@ header {
   font-weight: 600;
   transition: background-color 0.3s;
   display: inline-block;
+}
+
+.btn.destaque2 {
+  background-color: #fffb05;
+  color: rgb(43, 42, 42);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 30px; /* aumenta a distância do texto acima */
 }
 
 .btn.destaque:hover {
@@ -184,7 +208,7 @@ header {
 
 /* CONTATO BLOCO COMPLETO */
 .bloco-contato-completo {
-  background-color: #e6f6ff;
+  background-color: #073f5f;
   padding: 80px 20px;
 }
 
@@ -231,13 +255,13 @@ header {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #003366;
+  color: #ffffff;
 }
 
 .contato-formulario .texto-contato {
   font-size: 1rem;
   margin-bottom: 30px;
-  color: #155d8a;
+  color: #ffffff;
 }
 
 .formulario-moderno {
@@ -311,12 +335,12 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 360px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 40px 20px;
+  padding:120px 20px;
   position: relative;
   color: #fff;
 }
@@ -556,3 +580,194 @@ footer {
   font-weight: 400;
   color: #f0f0f0;
 }
+
+.plano-cidadao {
+  background-color: #f0f8ff;
+  padding: 60px 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.plano-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.plano-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.plano-info h2 {
+  color: #023e8a;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.plano-info p {
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.plano-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.plano-info ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.plano-imagem {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.plano-imagem img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.selos-especialidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.selo-acolhimento {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Tons diferentes de azul */
+.azul-claro {
+  background-color: #a2dffc;
+}
+
+.azul-medio {
+  background-color: #3db8f5;
+}
+
+.azul-escuro {
+  background-color: #0077b6;
+}
+
+.azul-profundo {
+  background-color: #023e8a;
+}
+.depoimentos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center; /* Isso centraliza horizontalmente */
+  max-width: 1000px;
+  margin: 0 auto; /* Isso centraliza o container dentro da seção */
+}
+.depoimentos-bloco {
+  background-color: #f0f8ff;
+  padding: 20px 20px 30px 60px;
+
+}
+
+.depoimentos-titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+.depoimentos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card-depoimento {
+  background: white;
+  padding: 12px 32px 26px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  max-width: 500px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-depoimento .texto {
+  font-size: 1rem;
+  color: #003366;
+  margin-bottom: 16px;
+}
+
+.avaliacao {
+  color: #f5b301;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-depoimento .data {
+  font-size: 0.9rem;
+  color: #666;
+}
+.instagram-preview {
+  padding: 40px 20px;
+  background-color: #f8faff;
+  text-align: center;
+}
+
+.instagram-preview h2 {
+  margin-bottom: 20px;
+  color: #003366;
+  font-size: 1.8rem;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.insta-grid img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.insta-grid img:hover {
+  transform: scale(1.03);
+}
+
+.btn.mini {
+  display: inline-block;
+  background-color: #00b4d8;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn.mini:hover {
+  background-color: #0077b6;
+}
+
+
+
+
